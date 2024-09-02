@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import Social from "../../compontents/Social/Social";
 import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
-//components
-import Header from "../../compontents/Header/Header";
 //banco de dados firebase
 import { db } from "../../services/firebaseConnection";
 import { getDocs, collection, orderBy, query, doc, getDoc } from 'firebase/firestore';
@@ -66,7 +64,6 @@ const Home = () => {
   console.log(socialLinks)
   return (
     <div className="flex flex-col w-full py-4 items-center justify-center">
-      {/* <Header /> */}
       <h1 className="md:text-4xl text-3xl font-bold text-white mt-20">Marcos Venâncio dos Santos</h1>
       <span className="text-gray-50 mb-5 mt-3">Veja meus links 👇</span>
 
